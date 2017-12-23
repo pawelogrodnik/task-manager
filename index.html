@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="./build/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Tasks List Manager</h1>
+    <div class="tasks--wrapper">
+        <h2>Tasks List</h2>
+        <div class="task--list" id="tasks">
+
+        </div>
+        <div class="user--wrapper">
+            <div class="user--single">
+                <h2>User #1</h2>
+                <div class="user--tasks" id="first">
+
+                </div>
+            </div>
+            <div class="user--single">
+                <h2>User #2</h2>
+                <div class="user--tasks" id="second">
+
+                </div>
+            </div>
+            <div class="user--single">
+                <h2>User #3</h2>
+                <div class="user--tasks" id="third">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyBO5-htZNumyN4lZCq9STRxXr30EtjBklM",
+            authDomain: "interview-db.firebaseapp.com",
+            databaseURL: "https://interview-db.firebaseio.com",
+            projectId: "interview-db",
+            storageBucket: "",
+            messagingSenderId: "355195548249"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js " integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin=" anonymous "></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="./build/js/main.js "></script>
+</body>
+
+</html>
